@@ -1,0 +1,26 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox fx:controller="client.RegController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+
+    <HBox>
+        <Label text = "Login:" prefWidth="100" />
+        <TextField fx:id="loginField" promptText="login" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <HBox>
+        <Label text = "Password:" prefWidth="100" />
+        <PasswordField fx:id="passwordField" promptText="password" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <HBox>
+        <Label text = "Nickname:" prefWidth="100" />
+        <TextField fx:id="nickField" promptText="nickname" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+    <TextArea fx:id="textArea" VBox.vgrow="ALWAYS"/>
+
+    <Button text="Зарегестрироватсья" onAction="#tryToReg"/>
+
+
+</VBox>
